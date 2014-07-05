@@ -23,7 +23,7 @@ article {
     float: left;
     width: 750px;
     min-height: 500px;
-    padding-top: 30px;
+    padding-top: 50px;
     background-color: #8EC272;
 }
 
@@ -51,4 +51,13 @@ article nav {
     float: left;
     font-size: 18px;
     margin: 5px;
+}
+
+.approval-pending {
+    border-bottom: 1px dashed #ccc;
+}
+
+.approval-pending img {
+    width: 400px;
+    height: 200px;
 }
