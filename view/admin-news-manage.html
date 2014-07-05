@@ -41,67 +41,53 @@
                 <a href="#" class="float-right user-operation" id="logout">退出</a>
                 <a href="#" class="float-right user-operation" id="personal">个人</a>
             </div>
-            <h2 class="title">商家审批</h2>
+            <h2 class="title">新闻管理</h2>
             <aside>
                 <ul>
                     <li><a href="admin.html">主页编辑</a></li>
-                    <li class="active"><a href="admin-approve.html">商家审批</a></li>
+                    <li><a href="admin-approve.html">商家审批</a></li>
                     <li><a href="admin-user-manage.html">用户管理</a></li>
-                    <li><a href="admin-news-manage.html">新闻管理</a></li>
+                    <li class="active"><a href="admin-news-manage.html">新闻管理</a></li>
                 </ul>
             </aside>
             <article>
-                <div class="approval-pending">
-                    <form action="#?id=1">
-                        <h2>某某某</h2>
-                        <div class="items">
-                            <label>姓名</label>
-                            <span>某某某</span>
-                        </div>
-                        <div class="items">
-                            <label>电话</label>
-                            <span>某某某</span>
-                        </div>
-                        <div class="items">
-                            <label>地址</label>
-                            <span>某某某</span>
-                        </div>
-                        <div class="items">
-                            <label>执照</label>
-                            <img src="#" alt="执照照片" />
-                        </div>
-                        
-                        <div class="btns">
-                            <button type="submit">同意</button>
-                            <button type="reset">拒绝</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="approval-pending">
-                    <form action="#?id=1">
-                        <h2>某某某</h2>
-                        <div class="items">
-                            <label>姓名</label>
-                            <span>某某某</span>
-                        </div>
-                        <div class="items">
-                            <label>电话</label>
-                            <span>某某某</span>
-                        </div>
-                        <div class="items">
-                            <label>地址</label>
-                            <span>某某某</span>
-                        </div>
-                        <div class="items">
-                            <label>执照</label>
-                            <img src="#" alt="执照照片" />
-                        </div>
-                        
-                        <div class="btns">
-                            <button type="submit">同意</button>
-                            <button type="reset">拒绝</button>
-                        </div>
-                    </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>标题</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-id="#">
+                            <td>12</td>
+                            <td>一根筷子引发的血案</td>
+                            <td>
+                                <a href="news-edit.html?id=12"><button class="news-edit">编辑</button></a>
+                                <button class="news-delete">删除</button>
+                            </td>
+                        </tr>
+                        <tr data-id="#">
+                            <td>12</td>
+                            <td>一根筷子引发的血案</td>
+                            <td>
+                                <a href="news-edit.html?id=12"><button class="news-edit">编辑</button></a>
+                                <button class="news-delete">删除</button>
+                            </td>
+                        </tr>
+                        <tr data-id="#">
+                            <td>12</td>
+                            <td>一根筷子引发的血案</td>
+                            <td>
+                                <a href="news-edit.html?id=12"><button class="news-edit">编辑</button></a>
+                                <button class="news-delete">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btns">
+                    <a href="news-edit.html"><button>新建新闻</button></a>
                 </div>
             </article>
         </div>

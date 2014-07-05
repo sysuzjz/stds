@@ -115,5 +115,14 @@ img {
 }
 
 table {
-    
+    width: 90%;
+    margin: 0 auto;
+    table-layout: auto;
+    border-collapse:collapse;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
