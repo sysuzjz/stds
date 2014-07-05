@@ -1,0 +1,60 @@
+body {
+    /*三种浏览器的背景颜色渐变，分别对应chrome/safari,FF,IE */
+    background: -webkit-gradient(linear ,0% 0%,100% 100%,
+                    color-stop(0, #16251d),
+                    color-stop(0.5, #aea98f),
+                    color-stop(1, #16251d) );
+    background: -moz-linear-gradient(left,
+                #16251d 0,
+                #aea98f 50%,
+                #16251d 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=true, startColorstr=#16251d, endColorstr=#aea98f, GradientType=1); /* IE6,7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#16251d', endColorstr='#aea98f',GradientType='1')"; /* IE8 */
+}
+
+#main-container {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#main-container .title {
+    font-family: Times;
+    color: #FFF;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear-float:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.clear-float {
+    zoom: 1;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hide {
+    display: none;
+}
+
