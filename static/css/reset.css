@@ -23,9 +23,15 @@ button, input, select, textarea { /* for ie */
     font: 18px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
 }
 
-h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
-h2 { font-size: 16px; }
-h3 { font-size: 14px; }
+h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+/*h2 { font-size: 30px; }*/
+h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
 h4, h5, h6 { font-size: 100%; }
 
 address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
@@ -62,7 +68,7 @@ table {
 
 /* 重置 hr */
 hr {
-    border: none;
+    /*border: none;*/
     height: 1px;
 }
 
@@ -82,10 +88,7 @@ label {
     vertical-align: top;
 }
 
-input[type='text'],
-input[type='password'],
-input[type='number'],
-input[type='date'] {
+input[type='text'], input[type='password'], input[type='number'], input[type='date'], input[type='url'] {
     display: inline-block;
     width: 250px;
     font-size: 20px;
@@ -97,6 +100,10 @@ input[type='checkbox'] {
     width: 25px;
 }
 
+input[type='file'] {
+    width: 90px;
+}
+
 h2 {
     font-size: 30px;
     margin: 20px 0;
@@ -105,8 +112,10 @@ h2 {
 
 textarea {
     font-size: 18px;
-    width: 80%;
+    width: 70%;
     min-height: 100px;
+    padding: 10px;
+    resize: none;
 }
 
 img {

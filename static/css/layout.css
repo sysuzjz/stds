@@ -58,3 +58,8 @@ body {
     display: none;
 }
 
+.article {
+    text-indent: 2em;
+    line-height: 25px;
+    margin: 20px 0;
+}

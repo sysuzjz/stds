@@ -51,8 +51,8 @@ header img {
 .hidebox {
     position: fixed;
     top: 190px;
-    left: calc(50% - 200px);
-    width: 400px;
+    left: calc(50% - 250px);
+    width: 500px;
     height: auto;
     background-color: #FFF;
     border-radius: 5px;
