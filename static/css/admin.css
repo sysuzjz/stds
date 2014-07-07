@@ -1,0 +1,63 @@
+aside {
+    float: left;
+    font-size: 25px;
+    width: 200px;
+    min-height: 500px;
+    margin: 0 20px;
+    padding-top: 50px;
+    background-color: #8EC272;
+}
+
+aside li {
+    font-weight: normal;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+aside .active {
+    font-weight: bold;
+    text-align: left;
+}
+
+article {
+    float: left;
+    width: 750px;
+    min-height: 500px;
+    padding-top: 50px;
+    background-color: #8EC272;
+}
+
+article nav {
+    padding: 15px;
+}
+
+.home-item {
+    min-width: 80px;
+    min-height: 30px;
+    font-size: 18px;
+
+}
+
+.home-item.active {
+    background-color: #ccc;
+}
+
+.man-list {
+    display: inline-block;
+    width: calc(100% - 150px);
+}
+
+.man-list button {
+    float: left;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.approval-pending {
+    border-bottom: 1px dashed #ccc;
+}
+
+.approval-pending img {
+    width: 400px;
+    height: 200px;
+}
