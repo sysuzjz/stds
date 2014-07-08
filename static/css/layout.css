@@ -1,6 +1,6 @@
 body {
     /*三种浏览器的背景颜色渐变，分别对应chrome/safari,FF,IE */
-    background: -webkit-gradient(linear ,0% 0%,100% 100%,
+   /* background: -webkit-gradient(linear ,0% 0%,100% 100%,
                     color-stop(0, #16251d),
                     color-stop(0.5, #aea98f),
                     color-stop(1, #16251d) );
@@ -8,8 +8,8 @@ body {
                 #16251d 0,
                 #aea98f 50%,
                 #16251d 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(enabled=true, startColorstr=#16251d, endColorstr=#aea98f, GradientType=1); /* IE6,7 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#16251d', endColorstr='#aea98f',GradientType='1')"; /* IE8 */
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled=true, startColorstr=#16251d, endColorstr=#aea98f, GradientType=1); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#16251d', endColorstr='#aea98f',GradientType='1')"; */
 }
 
 #main-container {
@@ -63,3 +63,52 @@ body {
     line-height: 25px;
     margin: 20px 0;
 }
+
+label.small {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+
+.logo {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+/*
+    以下样式取自Metro UI CSS
+*/
+button[type=submit], button[type=reset] {
+    font-family: 'Segoe UI', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 9pt;
+    min-width: 90px;
+    min-height: 32px;
+    height: 32px;
+    background-color: #ccc;
+    border: 1px transparent solid;
+    color: #353535;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 4px 10px;
+    position: relative;
+    border-radius: 0;
+    outline: 0;
+}
+
+button[type=submit] {
+    background-color: #008287;
+    color: #fff;
+}
+

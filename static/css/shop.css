@@ -1,21 +1,22 @@
-.logo {
+.side {
     float: left;
     width: 320px;
     /*padding: 20px 0 20px 40px;*/
     text-align: left;
 }
 
-.logo img {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 20px auto;
-}
+
 
 .details {
     float: left;
     width: 600px;
+    line-height: 30px;
     padding: 30px;
+}
+
+.details a {
+    font-size: 25px;
+    color: #000;
 }
 
 #shop-list .shop {

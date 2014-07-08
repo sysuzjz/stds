@@ -25,7 +25,6 @@ button, input, select, textarea { /* for ie */
 
 h1 {
     font-size: 40px;
-    margin: 20px 0;
 }
 /*h2 { font-size: 30px; }*/
 h3 {
@@ -81,27 +80,31 @@ html { overflow-y: scroll; }
 /* 自定义添加部分 */
 label {
     display: inline-block;
-    width: 90px;
     font-size: 22px;
+    color: #222;
+    min-width: 120px;
+    line-height: 30px;
     padding: 0 10px 0 0;
     text-align: right;
     vertical-align: top;
 }
 
-input[type='text'], input[type='password'], input[type='number'], input[type='date'], input[type='url'] {
+input {
+    border-radius: 2px;
+}
+
+input[type='text'], input[type='password'], input[type='number'], input[type='date'], input[type='url'], input[type='tel'], input[type='email'] {
     display: inline-block;
-    width: 250px;
+    width: calc(100% - 120px);
+    max-width: 250px;
     font-size: 20px;
     line-height: 22px;
-    padding: 2px;
+    padding: 2px 0 2px 5px;
+    border: 1px solid #ccc;
 }
 
 input[type='checkbox'] {
     width: 25px;
-}
-
-input[type='file'] {
-    width: 90px;
 }
 
 h2 {
@@ -112,7 +115,8 @@ h2 {
 
 textarea {
     font-size: 18px;
-    width: 70%;
+    max-width: 70%;
+    min-width: 300px;
     min-height: 100px;
     padding: 10px;
     resize: none;
@@ -134,4 +138,12 @@ th, td {
     padding: 5px;
     border: 1px solid #ccc;
     text-align: center;
+}
+
+*:visited {
+    outline: 0;
+}
+
+button:hover {
+    outline: 0;
 }

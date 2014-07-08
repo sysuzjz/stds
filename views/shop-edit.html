@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="keywords" content="汕头电商诚信保障平台, 汕头电商, 诚信, 保障">
+        <meta name="description" content="汕头电商诚信保障平台，让您更放心的去购物">
+        <title>汕头电商诚信保障平台</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="../static/css/layout.css" />
+        <link rel="stylesheet" type="text/css" href="../static/css/head.css" />
+        <link rel="stylesheet" type="text/css" href="../static/css/foot.css" />
+        <link rel="stylesheet" type="text/css" href="../static/css/shop.css" />
+        <script type="text/javascript">
+            /* 检测IE版本
+             * 若IE版本低于9，则跳转
+             * 
+            */
+            var isIE = !!window.ActiveXObject
+            var version = navigator.appVersion;
+            var version = version.split(";");  
+            var trimVersion = version[1].replace(/\s/g,""); 
+            if(isIE && (trimVersion=="MSIE6.0" || trimVersion == "MSIE7.0" || trimVersion == "MSIE8.0") ) {
+                alert("您的IE版本过低，请升级您的IE浏览器至IE9+或使用谷歌、火狐等高级浏览器");
+                window.location.href = "http://ie.microsoft.com";
+            }
+        </script>
+    </head>
+    <body class="clear-float">
+        <header>
+            <div id="head-container">
+                <h1>
+                    <a href="#"><img src="../static/img/logo.png"></a>
+                    汕头电商诚信保障平台
+                </h1> 
+            </div>
+        </header>
+        <div class="hide mask-layer"></div>
+        <div id="main-container" class="clear-float">
+            <div id="user-operation">
+                <a href="#" class="float-right user-operation" id="logout">退出</a>
+                <a href="#" class="float-right user-operation" id="personal">个人</a>
+            </div>
+        <!-- 到这里为head.html部分 -->
+            <h2 class="title">商店编辑</h2>
+            <form action="shop/company_edit" enctype="multipart/form-data" method="post">
+                <div class="side">
+                    <div>
+                        <img src="#" id="logo" class="logo" alt="logo" />
+                    </div>
+                    <input type="file" accept="image/*" name="logo" id="upload" />
+                    <div class="items">
+                        <label for="tel">联系电话</label>
+                        <input type="tel" id="tel" name="tel" placeholder="联系电话" /> 
+                    </div>
+                    <div class="items">
+                        <label for="email">联系邮箱</label>
+                        <input type="email" id="email" name="email" placeholder="联系邮箱" /> 
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="items">
+                        <label for="company-name">公司名</label>
+                        <input type="text" id="company-name" name="company-name" placeholder="商店名" /> 
+                    </div>
+                    <div class="items">
+                        <label>简介</label>
+                        <textarea name="content"></textarea>
+                    </div>
+                    <h3>保障商家</h3>
+                    <div id="shop-list">
+                        <div class="shop" data-id="#">
+                            <div class="operate-box">
+                                <button class="edit-shop">编辑</button>
+                                <button class="delete-shop">删除</button>
+                            </div>
+                            <a href="#"><span class="detail-platform" data-id="0">淘宝店：</span><span class="detail-name">我人有的和主产不为这</span></a>
+                            <p>评分：<span class="detail-grade">5</span></p>
+                            <p>承诺：<span class="detail-commitment">工要在地一，上是中国同，民了发已经</span></p>
+                        </div>
+                        <div class="shop" data-id="#">
+                            <div class="operate-box">
+                                <button class="edit-shop">编辑</button>
+                                <button class="delete-shop">删除</button>
+                            </div>
+                            <a href="#"><span class="detail-platform" data-id="0">淘宝店：</span><span class="detail-name">我人有的和主产不为这</span></a>
+                            <p>评分：<span class="detail-grade">5</span></p>
+                            <p>承诺：<span class="detail-commitment">工要在地一，上是中国同，民了发已经</span></p>
+                        </div>
+                    </div>
+                    <button id="btn-add-shop">新增保障商家</button>
+
+                </div>
+                <div class="btns">
+                    <button type="submit">修改</button>
+                    <button type="reset">取消</button>
+                </div>
+            </form>
+            <div class="hide hidebox" id="add-shop">
+                <form action="shop/shop_edit" method="post">
+                    <input type="hidden" value="" />
+                    <div class="items">
+                        <label for="add-shop-platform">电商平台</label>
+                        <select name="platform" id="add-shop-platform" required>
+                            <option value="">----</option>
+                            <option value="0">淘宝</option>
+                            <option value="1">京东</option>
+                            <option value="2">唯品会</option>
+                        </select>
+                    </div>
+                    <div class="items">
+                        <label for="add-shop-name">商店名</label>
+                        <input type="text" id="add-shop-name" required name="name" placeholder="商店名" /> 
+                    </div>
+                    <div class="items">
+                        <label for="add-shop-link">链接</label>
+                        <input type="url" id="add-shop-link" required name="link" placeholder="商店链接" /> 
+                    </div>
+                    <div class="items">
+                        <label for="add-shop-grade">评分</label>
+                        <input type="number" id="add-shop-grade" required name="grade" step="1" min="0" max="5" placeholder="0" /> 
+                    </div>
+                    <div class="items">
+                        <label for="add-shop-commitment">承诺</label>
+                        <textarea name="commitment" id="add-shop-commitment" required></textarea>
+                    </div>
+                    <div class="btns">
+                        <button type="submit">修改</button>
+                        <button type="reset">取消</button>
+                    </div>
+                </form>
+            </div>
+            <div class="hide hidebox" id="edit-shop" data-id="#">
+                <form action="#" method="post">
+                    <input type="hidden" value="" id="edit-shop-id" />
+                    <div class="items">
+                        <label for="edit-shop-platform">电商平台</label>
+                        <select name="platform" required id="edit-shop-platform">
+                            <option value="">----</option>
+                            <option value="0">淘宝</option>
+                            <option value="1">京东</option>
+                            <option value="2">唯品会</option>
+                        </select>
+                    </div>
+                    <div class="items">
+                        <label for="edit-shop-name">商店名</label>
+                        <input type="text" required id="edit-shop-name" name="name" placeholder="商店名" /> 
+                    </div>
+                    <div class="items">
+                        <label for="edit-shop-link">链接</label>
+                        <input type="url" required id="edit-shop-link" name="link" placeholder="商店链接" /> 
+                    </div>
+                    <div class="items">
+                        <label for="edit-shop-grade">评分</label>
+                        <input type="number" required id="edit-shop-grade" name="grade" step="1" min="0" max="5" placeholder="评分" /> 
+                    </div>
+                    <div class="items">
+                        <label for="edit-shop-commitment">承诺</label>
+                        <textarea name="commitment" id="edit-shop-commitment" required></textarea>
+                    </div>
+                    <div class="btns">
+                        <button type="submit" class="">修改</button>
+                        <button type="reset">取消</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <address>&copy;2014 By 陈冠达 郑锦泽 &nbsp; &nbsp;备案号：粤12345678</address>
+        </footer>
+    </body>
+    <script type="text/javascript" src="../static/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../static/js/head.js"></script>
+    <script type="text/javascript" src="../static/js/shop-edit.js"></script>
+</html>

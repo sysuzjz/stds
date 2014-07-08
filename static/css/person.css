@@ -1,0 +1,10 @@
+.user-msg {
+    width: 1024px;
+    padding: 30px 0;
+    background-color: #aad38a;
+}
+
+.user-msg .user-msg-detail {
+    width: 450px;
+    margin: 0 auto;
+}
