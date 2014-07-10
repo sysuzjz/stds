@@ -36,7 +36,7 @@
         </header>
         <div class="hide mask-layer"></div>
         <div class="hide hidebox" id="login-box">
-            <form action="#" method="post">
+            <form action="index.php/user/login" method="post">
                 <h2>用户登录</h2>
                 <div class="items">
                     <label for="name">用户名</label>
@@ -95,7 +95,7 @@
             </form>
         </div>
         <div class="hide hidebox" id="register-box-1">
-            <form action="#" method="post">
+            <form action="index.php/user/reg" method="post">
                 <h2>用户注册</h2>
                 <div class="items">
                     <label>用户类别</label>
